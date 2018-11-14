@@ -3,6 +3,7 @@
 library(dplyr)
 library(readxl)
 library(stringr)
+library(lubridate)
 
 housePrices <- read_excel("data/UKHousePrices.xls", range = "UK HP Since 1952!A6:C270")
 
@@ -38,6 +39,8 @@ dispIncome <- dispIncome %>%
 
 HPIncome <- housePricesByYear %>%
   left_join(dispIncome, by = "Year")
+
+HPIncome$Year <- ymd(paste0(HPIncome$Year, "0101"))
 
 saveRDS(HPIncome, "data/data.rds")
 

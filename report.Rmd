@@ -1,0 +1,22 @@
+---
+title: "Report"
+author: "Martin Moench"
+date: "14 November 2018"
+output: pdf_document
+params:
+  contribution: NA
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Test
+
+```{r}
+params$contribution
+```
+
+A contribution of `params$contribution` %.
