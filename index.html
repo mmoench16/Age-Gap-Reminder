@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="jumbotron-narrow.css" type="text/css"/>
     {{ headContent() }}
     {{ bootstrapLib() }}
+    <link rel="stylesheet" href="jumbotron-narrow.css" type="text/css"/>
     <title>Age Gap - Why millenials can't afford homes</title>
   </head>
 
@@ -11,22 +11,28 @@
 
     <div class="container">
 
-      <div class="jumbotron">
-        <h1>Jumbotron heading</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+      <div class="jumbotron" style="text-align:left;">
+        <h1>Why millennials struggle to afford homes..</h1>
+        <p class="lead">A comparison of house prices and real disposable income in the UK.</p>
       </div>
 
       <div class="row marketing">
         <div class="col-lg-12">
           <h3>House Prices vs Disposable Income</h3>
-          <p>Text text text.</p>
+          <p>Housing and home ownership, especially with regards to younger people, have caused many a heated debate in recent years. *More text*. In his <a href="https://www.penguin.co.uk/books/111/1116808/how-to-be-right/9780753553091.html">latest book</a> James O'Brien (2018) argues that one of the greatest challenges young people face on their way to home ownership is the widening gap between house prices and income - evidence suggests that he (and many others who have vocalised this) has got a point. Let's have a look.</p>
+          <p>Below you can see a chart that explores the relationship between house prices (<em>Source: <a href="https://www.nationwide.co.uk/about/house-price-index/download-data#xtab:uk-series">Nationwide Building Society</a></em>) and real disposable income per capita (<em>Source: <a href="https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/crxw/ukea">Office for National Statistics</a></em>), in the United Kingdom, from 1955 to 2017.</p>
           <div>
             {{plot}}
           </div>
+          <br>
+          <p>Since the mid-1970s, house prices have generally grown much faster than real disposable income per capita, making it ever more difficult for individuals to buy homes.</p>
+          <p></p>
         </div>
       </div>
       
       <div class="row marketing">
+        <h3>Compare Different Years</h3>
+        <p>The little tool below will allow you to compare</p>
         <div class="col-lg-6">
           {{ select1 }}
         </div>
@@ -62,12 +68,12 @@
       
       <div class="row marketing">
         <h3>References</h3>
-        <p>Text</p>
+        <p></p>
       </div>
       
       <div class="row marketing">
         <h3>Acknowledgements</h3>
-        <p>Text</p>
+        <p><a href="https://www.freepik.com/free-photos-vectors/background">The avocado image was created by Dashu83 - Freepik.com</a></p>
       </div>
 
       <footer class="footer">
