@@ -19,20 +19,19 @@
       <div class="row marketing">
         <div class="col-lg-12">
           <h3>House Prices vs Disposable Income</h3>
-          <p>Housing and home ownership, especially with regards to younger people, have caused many a heated debate in recent years. *More text*. In his <a href="https://www.penguin.co.uk/books/111/1116808/how-to-be-right/9780753553091.html">latest book</a> James O'Brien (2018) argues that one of the greatest challenges young people face on their way to home ownership is the widening gap between house prices and income - evidence suggests that he (and many others who have vocalised this) has got a point. Let's have a look.</p>
-          <p>Below you can see a chart that explores the relationship between house prices (<em>Source: <a href="https://www.nationwide.co.uk/about/house-price-index/download-data#xtab:uk-series">Nationwide Building Society</a></em>) and real disposable income per capita (<em>Source: <a href="https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/crxw/ukea">Office for National Statistics</a></em>), in the United Kingdom, from 1955 to 2017.</p>
+          <p>Housing and home ownership, especially with regards to younger people, have caused many a heated debate in recent years. *More text*. In his latest book James O'Brien (2018)<sup><a href="#ref1">1</a></sup> argues that one of the greatest challenges young people face on their way to home ownership is the widening gap between house prices and income - evidence suggests that he and many others<sup><a href="#ref2">2</a></sup> who have voiced similar concerns have got a point. Let's have a look.</p>
+          <p>Below you can see a chart that explores the relationship between the average house price (<em>Source: <a href="https://www.nationwide.co.uk/about/house-price-index/download-data#xtab:uk-series">Nationwide Building Society</a></em>) and average real disposable income per capita (<em>Source: <a href="https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/crxw/ukea">Office for National Statistics</a></em>), in the United Kingdom, from 1955 to 2017.</p>
           <div>
             {{plot}}
           </div>
           <br>
-          <p>Since the mid-1970s, house prices have generally grown much faster than real disposable income per capita, making it ever more difficult for individuals to buy homes.</p>
-          <p></p>
+          <p>Since the mid-1970s, house prices have generally grown much faster than real disposable income per capita, making it ever more difficult for individuals to buy homes. Millennials' spending habits have been subjected to much scrutiny<sup><a href="#ref3">3</a>,<a href="#ref4">4</a></sup> over the last couple of years but I would like to think that the above should at least make you question the adage of "millennials can't afford homes because they spend it all on avocados and coffee"<sup><a href="#ref5">5</a>,<a href="#ref6">6</a></sup>.</p>
         </div>
       </div>
       
       <div class="row marketing">
         <h3>Compare Different Years</h3>
-        <p>The little tool below will allow you to compare</p>
+        <p>The tool below will allow you to select two years from 1955 to 2017 and compare how long it took/takes to pay off the average house price for the years selected, based on the contribution you are willing to make from the average, monthly disposable income for that year.</p>
         <div class="col-lg-6">
           {{ select1 }}
         </div>
@@ -42,17 +41,21 @@
         </div>
         
         <div class="col-lg-12">
+          <p>Choose how much of the average, monthly disposable income of the selected years you would like to contribute towards paying off the average house for the same years.</p>
           {{ slider }}
         </div>
         
         <div class="col-lg-6">
           {{ text1 }}
+          <br>
         </div>
         
         <div class="col-lg-6">
           {{ text2 }}
+          <br>
         </div>
         
+        <p>When discussing problems that affect generations differently, I thought it may be helpful to first of all define those generations. While there are many definitions of the various generations out there (normally deviating slightly in terms of what year constitutes the start/end of a generation), I have chosen to include the definition of the not-for-profit "fact" tank Pew Research Center here.<img src="www/generations.png" align="right" alt="The generations defined"></p>
       </div>
       
       <div class="row marketing">
@@ -62,13 +65,24 @@
       
       <div class="row marketing">
         <h3>Caveats</h3>
-        <p class="col-lg-9">Text</p>
-        <p class="col-lg-3"><a href="http://www.pewresearch.org/fact-tank/2018/04/11/millennials-largest-generation-us-labor-force/ft_18-04-02_generationsdefined2017_working-age/"><img width="200" height="350" src="http://www.pewresearch.org/wp-content/uploads/2018/04/FT_18.04.02_generationsDefined2017_working-age.png?w=200" class="attachment-large size-large" alt="The generations defined" /></a></p>
+        <p>Text</p>
       </div>
       
       <div class="row marketing">
         <h3>References</h3>
-        <p></p>
+        <ol>
+          <li id="ref1"><a href="https://www.penguin.co.uk/books/111/1116808/how-to-be-right/9780753553091.html">James O'Brien (2018) - <em>How To Be Right</em></a></li>
+          
+          <li id="#ref2"><a href="http://uk.businessinsider.com/why-millennials-spending-habits-arent-necessarily-their-fault-2018-2">Fraser Moore (2018) - <em>Millennials are bad with money but it isn’t their fault — a behavioural economist explains why</em></a></li>
+          
+          <li id="#ref3"><a href="https://www.lexingtonlaw.com/blog/credit-cards/millennial-spending-habits.html">Lexington Law (2018) - <em>45 Statistics on Millennial Spending Habits in 2018</em></a></li>
+          
+          <li id="#ref4"><a href="https://www.telegraph.co.uk/family/parenting/millennials-really-spend-money/">Luke Mintz (2017) - <em>It's not all sandwiches and city breaks: How millennials really spend their money</em></a></li>
+          
+          <li id="#ref5"><a href="https://www.theguardian.com/lifeandstyle/2017/may/15/australian-millionaire-millennials-avocado-toast-house">Sam Levin (2017) - <em>Millionaire tells millennials: if you want a house, stop buying avocado toast</em></a></li>
+          
+          <li id="#ref6"><a href="https://scholarship.claremont.edu/cmc_theses/1762/">Brendan MacDonald (2018) - <em>Is Avocado Toast the Reason I'm Still Living with My Parents?</em></a></li>
+        </ol>
       </div>
       
       <div class="row marketing">
@@ -81,9 +95,5 @@
       </footer>
 
     </div> <!-- /container -->
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
