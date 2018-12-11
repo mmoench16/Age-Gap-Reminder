@@ -11,12 +11,23 @@ params:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Age Gap - Why millenials can't afford homes
 
-Test
+One of the greatest challenges young people face on their way to home ownership is the widening gap between house prices and income.
+
+The chart below explores the relationship between the average house price (Source: [Nationwide Building Society](https://www.nationwide.co.uk/about/house-price-index/download-data#xtab:uk-series)) and average real disposable income per capita (Source: [Office for National Statistics](https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/crxw/ukea)), in the United Kingdom, from 1955 to 2017.
+
+INSERT CHART HERE
 
 ```{r}
 params$contribution
 ```
 
 A contribution of `params$contribution` %.
+
+### Comparison
+
+You have selected YEAR1 and YEAR2 for comparison.
+
+INSERT TEXT1
+INSERT TEXT2

@@ -5,6 +5,7 @@ library(xts)
 
 data <- readRDS("data/data.rds")
 xts1 <- xts(data, order.by = data$Year, "%Y/%m/%d")
+generations <- readRDS("data/generations.rds")
 
 server <- function(input, output) {
   output$HPplot <- renderDygraph({
@@ -99,4 +100,8 @@ server <- function(input, output) {
       write.csv(data, file)
     }
   )
+  
+  output$generations <- DT::renderDataTable(generations, 
+                                            options = list(dom = "t"),
+                                            rownames = F)
 }

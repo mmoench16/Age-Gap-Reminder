@@ -1,5 +1,6 @@
 library(shiny)
 library(dygraphs)
+library(DT)
 
 data <- readRDS("data/data.rds")
 
@@ -22,7 +23,8 @@ ui <- fluidPage(
                text1 = htmlOutput("text1"),
                text2 = htmlOutput("text2"),
                reportButton = downloadButton("report", "Download PDF"),
-               dataButton = downloadButton("data", "Download Data")
+               dataButton = downloadButton("data", "Download Data"),
+               generations = DT::dataTableOutput("generations")
                )
 )
 

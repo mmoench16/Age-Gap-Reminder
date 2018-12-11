@@ -44,4 +44,23 @@ HPIncome$Year <- ymd(paste0(HPIncome$Year, "0101"))
 
 saveRDS(HPIncome, "data/data.rds")
 
+generations <- tibble(
+  Generation = c("Post-Millennial Generation",
+                 "Millennial Generation",
+                 "Generation X",
+                 "Baby Boom Generation",
+                 "Silent and Greatest Generations"),
+  Born = c("1997 and later",
+           "1981 to 1996",
+           "1965 to 1980",
+           "1946 to 1964",
+           "1945 or earlier"),
+  `Age in 2017` = c("20 and younger",
+                    "21 to 36",
+                    "37 to 52",
+                    "53 to 71",
+                    "72 and older")
+)
+
+saveRDS(generations, "data/generations.rds")
 
